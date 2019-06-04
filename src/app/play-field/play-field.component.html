@@ -1,0 +1,13 @@
+{{snake | json}}
+
+<div class="playground">
+  <div *ngFor="let i1 of playfield; let x = index">
+    <div
+      *ngFor="let i2 of i1; let y = index"
+      [ngClass]="{'red': i2.red}"
+    ></div>
+  </div>
+</div>
+
+{{previousValue | json}}
+{{currentValue | json}}
